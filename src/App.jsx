@@ -1,16 +1,16 @@
-import "./App.css";
+import styles from "./App.module.css";
 function App() {
   return (
     <div>
-      <header>
+      <header className={styles.header}>
         <h1>Header</h1>
       </header>
-      <main>
-        <div className="center-box">
-          <div className="box"></div>
+      <main className={styles.main}>
+        <div className={styles.centerBox}>
+          <div className={styles.box}></div>
         </div>
       </main>
-      <footer>
+      <footer className={styles.footer}>
         <p>Footer</p>
       </footer>
     </div>
