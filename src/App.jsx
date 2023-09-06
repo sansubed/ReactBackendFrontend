@@ -1,14 +1,14 @@
 // Creat app component 
 
-import Header from "./header"
+import Header from "./header/"
 import Footer from "./footer"
 
 
 function App() {
   return(
   <>
- <div>Hello App</div> 
  <Header />
+ <div>Hello App</div> 
  <Footer />
  </>
  
@@ -16,5 +16,6 @@ function App() {
 }
 
 export default App
+
 
 

@@ -1,3 +1,5 @@
+import './header.css'
+
 function Footer() {
     return <div>footer </div>
   }
