@@ -1,45 +1,16 @@
 /* CSS retaled to the App.jsx */
-.header {
-  background-color: gray;
-  color: white;
-  text-align: center;
-  padding: 1rem;
-  /* position: static;
-    top: 0;
-    z-index: 100; */
-}
-
-.footer {
-  background-color: gray;
-  padding: 1rem;
-  text-align: center;
-  color: white;
-}
-
-.main {
-  min-height: calc(100% - 4rem);
-  height: 100vh;
-  background: linear-gradient(to bottom, #ffd700, #ffa500);
-  padding: 2rem;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.centerBox {
-  height: 400px;
-  width: 600px;
-  background-color: #fff;
-  padding: 1rem;
-  border-radius: 20px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
 .box {
-  width: 200px;
-  height: 200px;
-  background: linear-gradient(to bottom, #ffd700, #ffa500);
-  border-radius: 50%;
+  background: red;
+  /* padding : clockwise: top, right, bottom, left*/
+  /* padding: 10px all sides  gap between you and the cloth*/
+  /* padding: 10px(top-bottom) 10px (left-right) */
+  /* border: thickness is related to the elemnet, part of the element */
+  /* margin: is not the part of you, it's outside the element */
+  /* box model for inline element ???
+  id for css module
+  */
+
+  padding: 10px 50px 20px 40px;
+  margin: 10px 0px 0px 40px;
+  border: 10px solid blue;
 }
