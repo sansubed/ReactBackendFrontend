@@ -1,5 +1,5 @@
 function Header() {
     return (
-            <div>Header</div>
+            <div>Footer</div>
     )
 }
