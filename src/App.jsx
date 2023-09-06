@@ -1,6 +1,11 @@
 //Create App Component
-
-function App() {
-  return <div>Hello App</div>
+import Header from './header'
+function App() { 
+  return 
+    <>
+      <header />
+      <div>Hello App</div> 
+      <footer />
+    </>
 }
 export default App
