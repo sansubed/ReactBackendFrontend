@@ -1,12 +1,20 @@
 //Create App Component
 
+import Footer from "./footer";
+import Header from "./header";
+
 function App() {
-  return <div>Hello App</div>;
+  return (
+    <div>
+      Hello App
+      <Header />
+      <Footer />
+    </div>
+  );
 }
 export default App;
 
 // import styles from "./App.module.css"; //javascript
-
 // const myVariable = "Hello World";
 // function App() {
 //   //React Fragment is used to creare the empty tag, <></> if you do not want to create extra element
