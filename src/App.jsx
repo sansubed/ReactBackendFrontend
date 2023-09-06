@@ -1,20 +1,15 @@
-import './App.css'
+// Create App component
+
+import Footer from './footer/footer'
+import Header from './header/header'
 
 function App() {
   return (
-    <div>
-      <header>
-        <h1>Header</h1>
-      </header>
-      <main>
-        <div className="center-box">
-          <div className="box"></div>
-        </div>
-      </main>
-      <footer>
-        <p>Footer</p>
-      </footer>
-    </div>
+    <>
+      <Header />
+      <div>Hello App</div>
+      <Footer />
+    </>
   )
 }
 
