@@ -1,15 +1,18 @@
 //Create App Component
 
-import Footer from "./footer";
-import Header from "./header";
+import Footer from "./footer/footer";
+import Header from "./header/header";
 
 function App() {
   return (
-    <div>
-      Hello App
-      <Header />
-      <Footer />
-    </div>
+    <>
+      {/* you can either use react fragment or one div! One parent is must! */}
+      <div>
+        Hello App
+        <Header />
+        <Footer />
+      </div>
+    </>
   );
 }
 export default App;
