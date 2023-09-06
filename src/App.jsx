@@ -1,7 +1,7 @@
 import "./app.css";
 
 function App() {
-  return <div>My Country My pride</div>;
+  return <div>Hello World</div>;
 }
 <div>
   <header>
