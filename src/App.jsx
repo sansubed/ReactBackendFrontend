@@ -1,7 +1,7 @@
 // Creat app component 
 
 import Header from "./header"
-import Home from "./home/home"
+import Home from "./home"
 import Footer from "./footer"
 
 
@@ -12,7 +12,7 @@ function App() {
  <Header />
  <div>Hello App</div> 
  <Home/>
- <Footer />
+ <Footer/>
  </>
  
   )
