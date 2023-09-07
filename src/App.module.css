@@ -1,16 +1,5 @@
-* {
-  margin: 0;
-  padding: 0;
-}
-
-html,
-body {
-  height: 100%;
-  min-height: 100%;
-  font-family: "Inter", sans-serif;
-}
-
-header {
+/* CSS related to App.jsx */
+.header {
   background-color: gray;
   color: white;
   text-align: center;
@@ -20,14 +9,14 @@ header {
       z-index: 100; */
 }
 
-footer {
+.footer {
   background-color: gray;
   padding: 1rem;
   text-align: center;
   color: white;
 }
 
-main {
+.main {
   min-height: calc(100% - 4rem);
   background: linear-gradient(to bottom, #ffd700, #ffa500);
   padding: 2rem;
@@ -36,7 +25,7 @@ main {
   align-items: center;
 }
 
-.center-box {
+.centerBox {
   height: 400px;
   width: 600px;
   background-color: #fff;

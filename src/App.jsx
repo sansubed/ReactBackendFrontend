@@ -1,18 +1,13 @@
-import "./App.css";
+import styles from "./App.module.css";
+import Footer from "./footer";
+import "./global.css";
+import Header from "./header";
 function App() {
   return (
     <div>
-      <header>
-        <h1>Header</h1>
-      </header>
-      <main>
-        <div className="center-box">
-          <div className="box"></div>
-        </div>
-      </main>
-      <footer>
-        <p>Footer</p>
-      </footer>
+      <div>Hello App</div>
+      <Header />
+      <Footer />
     </div>
   );
 }
