@@ -1,5 +1,6 @@
-import Header from "./header";
-import Footer from "./footer";
+import Header from "./Header/header";
+import Footer from "./Footer/footer";
+import Home from "./Home/home";
 
 // create App component
 function App() {
@@ -7,6 +8,7 @@ function App() {
     <div>
       <div>Hello App</div>
       <Header />
+      <Home />
       <Footer />
     </div>
   );
