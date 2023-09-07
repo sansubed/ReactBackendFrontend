@@ -2,6 +2,7 @@
 
 import Footer from './footer/footer'
 import Header from './header/header'
+import Home from './home/home'
 
 function App() {
   // React Fragment: <></>
@@ -12,7 +13,7 @@ function App() {
   return (
     <>
       <Header />
-      <div>Hello App</div>
+      <Home />
       <Footer />
     </>
   )
