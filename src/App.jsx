@@ -2,12 +2,13 @@
 
 import Footer from "./footer";
 import Header from "./header";
+import Home from "./home/home";
 
 function App() {
   return (
     <>
       <Header />
-      <div>Hello App</div>
+      <Home />
       <Footer />
     </>
   );
