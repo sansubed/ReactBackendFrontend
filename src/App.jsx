@@ -1,12 +1,3 @@
-<<<<<<< HEAD
-import React from "react";
-
-function App() {
-  return <div>App</div>;
-}
-
-export default App;
-=======
 import styles from './App.module.css'
 
 function App() {
@@ -28,4 +19,3 @@ function App() {
 }
 
 export default App
->>>>>>> 8dd4646af3c9710b2b28dc1fd5f8a3e1a386a9e1

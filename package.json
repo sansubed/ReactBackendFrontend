@@ -1,9 +1,5 @@
 {
-<<<<<<< HEAD
-  "name": "react-1",
-=======
   "name": "fdb30",
->>>>>>> 8dd4646af3c9710b2b28dc1fd5f8a3e1a386a9e1
   "private": true,
   "version": "0.0.0",
   "type": "module",
