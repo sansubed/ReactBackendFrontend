@@ -1,5 +1,6 @@
 import Header from "./header/header.jsx";
 import Footer from "./footer/footer.jsx";
+import Home from "./home/home.jsx";
 
 function App() {
   return (
@@ -7,6 +8,7 @@ function App() {
       <Header />
       <div>App</div>
       <Footer />
+      <Home />
     </>
   );
 }
