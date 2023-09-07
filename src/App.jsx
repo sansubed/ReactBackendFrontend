@@ -1,19 +1,15 @@
-import "./app.css";
+import Footer from "./footer";
+import Header from "./header";
+import Home from "./home/home";
 
 function App() {
-  return <div>Hello World</div>;
+  return (
+    <>
+      <Header />
+      <Home />
+      <Footer />
+    </>
+  );
 }
-<div>
-  <header>
-    <h1>Header</h1>
-  </header>
-  <main>
-    <div class="center-box">
-      <div class="box"></div>
-    </div>
-  </main>
-  <footer>
-    <p>Footer</p>
-  </footer>
-</div>;
+
 export default App;
