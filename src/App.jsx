@@ -1,8 +1,8 @@
 // Creat app component 
 
-import Header from "./header"
+import Header from "./head/header"
 import Home from "./home/home"
-import Footer from "./footer"
+import Footer from "./footer/footer"
 
 
 
