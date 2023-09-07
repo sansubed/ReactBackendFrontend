@@ -1,7 +1,7 @@
 // Creat app component 
 
 import Header from "./header"
-import Home from "./home"
+import Home from "./home/home"
 import Footer from "./footer"
 
 
