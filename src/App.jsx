@@ -4,9 +4,9 @@ import Footer from "./footer";
 function App() {
   return;
   <>
-    <header />
-    <div></div>
-    <footer />
+    <Header />
+    <Home />
+    <Footer />
   </>;
 }
 export default App;
