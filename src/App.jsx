@@ -1,7 +1,7 @@
 //create app component
 
-import Footer from "./footer";
-import Header from "./header";
+import Footer from "./footer/footer";
+import Header from "./header/header";
 import Home from "./home/home";
 
 function App() {
