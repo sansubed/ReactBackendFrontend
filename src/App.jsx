@@ -1,8 +1,8 @@
 // Create App component
 
-import Footer from './footer/footer'
-import Header from './header/header'
-import Home from './home/home'
+import Footer from "./footer/footer";
+import Header from "./header/header";
+import Home from "./home/home";
 
 function App() {
   // React Fragment: <></>
@@ -16,7 +16,7 @@ function App() {
       <Home />
       <Footer />
     </>
-  )
+  );
 }
 
-export default App
+export default App;
