@@ -1,14 +1,15 @@
-import Header from "./header/header.jsx";
-import Footer from "./footer/footer.jsx";
-import Home from "./home/home.jsx";
+// Create App component
+
+import Footer from "./footer/footer";
+import Header from "./header/header";
+import Home from "./home/home";
 
 function App() {
   return (
     <>
       <Header />
-      <div>App</div>
-      <Footer />
       <Home />
+      <Footer />
     </>
   );
 }

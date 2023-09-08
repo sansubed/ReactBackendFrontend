@@ -1,8 +1,7 @@
-import style from "./home.module.css"
-
+import "./home.css";
 
 function Home() {
-  return <div className={style.ghar}>home</div>;
+  return <div className="home">Home</div>;
 }
 
 export default Home;
