@@ -1,6 +1,7 @@
 import "./home.css";
+
 function Home() {
-  return <div className="home">This is the Home component</div>;
+  return <div className="home">Home</div>;
 }
 
 export default Home;
