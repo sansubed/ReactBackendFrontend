@@ -3,6 +3,7 @@
 import Footer from "./footer/footer";
 import Header from "./header/header";
 import Home from "./home/home";
+import styles from "./App.module.css";
 
 function App() {
   // React Fragment: <></>
@@ -11,11 +12,11 @@ function App() {
   // Box model for inline element
   // id for css module
   return (
-    <>
+    <div className={styles.container}>
       <Header />
       <Home />
       <Footer />
-    </>
+    </div>
   );
 }
 
