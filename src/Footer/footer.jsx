@@ -1,9 +1,9 @@
-import "./footer.css";
+import styles from "./footer.module.css";
 
 function Footer() {
   return (
     <>
-      <div className="footer">This is Footer Component</div>
+      <div className={styles.footer}>This is Footer Component</div>
     </>
   );
 }

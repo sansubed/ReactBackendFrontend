@@ -1,9 +1,9 @@
-import "./home.css";
+import styles from "./home.module.css";
 
 function Home() {
   return (
     <>
-      <div className="home">This is my home</div>
+      <div className={styles.home}>This is my home</div>
     </>
   );
 }
