@@ -1,0 +1,11 @@
+.home {
+  background-color: rgb(13, 165, 28);
+  line-height: 1;
+  font-size: 32px;
+  width: 200px;
+  height: 100px;
+  padding: 20px;
+  border: 10px solid blue;
+  position: absolute;
+  top: 16px;
+}
