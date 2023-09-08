@@ -10,8 +10,7 @@ function App() {
   return(
   <>
  <Header />
- <div>Hello App</div> 
- <Home/>
+ <Home/> 
  <Footer/>
  </>
  

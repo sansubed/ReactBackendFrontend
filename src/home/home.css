@@ -1,4 +1,15 @@
-.home{
-    background-color: rgb(175, 236, 20);
-    color: white;
-}
+.home {
+    background-color: red;
+    line-height: 1;
+    font-size: 32px;
+    width: 200px;
+    height: 100px;
+    padding: 20px;
+    border: 10px solid blue;
+    position: absolute;
+    left: o;
+    bottom: 0;
+    top: 5;
+    right: 0;
+    margin: auto;
+  }
