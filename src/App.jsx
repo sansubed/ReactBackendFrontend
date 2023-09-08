@@ -9,7 +9,6 @@ function App() {
     <>
       {/* you can either use react fragment or one div! One parent is must! */}
       <div>
-        Hello App
         <Header />
         <Home />
         <Footer />

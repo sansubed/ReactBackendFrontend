@@ -1,4 +1,23 @@
 .home {
   background-color: aqua;
   color: black;
+  line-height: 1;
+  font-size: 32px;
+  width: 200px;
+  height: 100px;
+  padding: 20px;
+  border: 10px solid blue;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  left: 0;
+  margin: auto;
 }
+
+/* everything we are discussing in the flow layout */
+/* position layout*/
+/* flex layout*/
+/* grid layout */
+/* web development: sans serif font is very popular font-family */
+/* color -> name, hex code, rgb code, hsl code*/
