@@ -1,4 +1,4 @@
-import styles from "./header.modules.css";
+import styles from "./header.module.css";
 
 // Function declaration syntax
 function Header() {
