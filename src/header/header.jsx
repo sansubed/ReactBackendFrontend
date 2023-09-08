@@ -1,4 +1,5 @@
+import styles from "./header.css";
 function Header() {
-  return <div>Header</div>;
+  return <div className={styles.header}>Header</div>;
 }
 export default Header;
