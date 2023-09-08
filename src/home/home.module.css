@@ -1,5 +1,5 @@
 .home {
-  background-color: rgb(13, 165, 28);
+  background-color: red;
   line-height: 1;
   font-size: 32px;
   width: 200px;
@@ -7,5 +7,20 @@
   padding: 20px;
   border: 10px solid blue;
   position: absolute;
-  top: 16px;
+  left: 0;
+  bottom: 0;
+  top: 0;
+  right: 0;
+  margin: auto;
 }
+
+/* Flow Layout */
+/* Position Layout */
+/* Flex Layout */
+/* Grid Layout */
+
+/* Color */
+/* name */
+/* hex code */
+/* rgb code */
+/* hsl code */

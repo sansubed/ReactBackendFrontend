@@ -1,6 +1,8 @@
 import styles from "./header.module.css";
+
+// Function declaration syntax
 function Header() {
-  return <div className={styles.header}>I m header</div>;
+  return <header className={styles.header}>I am header</header>;
 }
 
 export default Header;
