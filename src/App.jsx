@@ -3,6 +3,7 @@
 import Footer from "./footer/footer";
 import Header from "./header/header";
 import Home from "./home/home";
+import styles from "./app.module.css";
 
 function App() {
   return (
@@ -11,6 +12,7 @@ function App() {
       <div>
         <Header />
         <Home />
+        <div className={styles.box}>I am the App</div>
         <Footer />
       </div>
     </>

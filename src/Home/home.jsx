@@ -1,5 +1,5 @@
-import "./home.css";
+import styles from "./home.module.css";
 function Home() {
-  return <div className="home">I am Home.</div>;
+  return <div className={styles.home}>I am Home.</div>;
 }
 export default Home;
