@@ -7,12 +7,12 @@ import styles from "./App.module.css";
 
 function App() {
   return (
-    <>
+    <div className={styles.container}>
       <Header />
       <Home />
       <div className={styles.home}> I am new content in App</div>
       <Footer />
-    </>
+    </div>
   );
 }
 
