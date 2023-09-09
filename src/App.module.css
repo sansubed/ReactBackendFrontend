@@ -40,4 +40,14 @@
   height: 200px;
   background: linear-gradient(to bottom, #ffd700, #ffa500);
   border-radius: 50%;
+=======
+.container {
+  background-color: red;
+  padding: 10px;
+  border: 5px solid blue;
+}
+
+.home {
+  height: 500px;
+  background-color: yellowgreen;
 }
