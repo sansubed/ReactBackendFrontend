@@ -15,6 +15,7 @@ function App() {
     <div className={styles.container}>
       <Header />
       <Home />
+      <div className={styles.home}> I am content in App</div>
       <Footer />
     </div>
   );
