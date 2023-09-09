@@ -6,12 +6,12 @@ import Home from "./home/home";
 
 function App() {
   return (
-    <>
+    <div className={styles.container}>
       <Header />
       <Home />
       <div className={styles.home}> I am new content in App</div>
       <Footer />
-    </>
+    </div>
   );
 }
 
