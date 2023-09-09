@@ -14,46 +14,14 @@ import styles from "./App.module.css";
 
 function App() {
   return (
-    <>
-      {/* you can either use react fragment or one div! One parent is must! */}
-      <div>
-        <Header />
-        <Home />
-        <div className={styles.box}>I am the App</div>
-        <Footer />
-      </div>
-    </>
-  );
-  // React Fragment: <></>
-
-  // TODO
-  // Box model for inline element
-  // id for css module
-  return (
-    <>
+    <div className={styles.container}>
       <Header />
       <Home />
-      <div className={styles.home}> I am content in App</div>
+      <div className={styles.home}> I am new content in App</div>
       <Footer />
-    </>
+    </div>
   );
 }
 export default App;
 
-// import styles from "./App.module.css"; //javascript
-// const myVariable = "Hello World";
-// function App() {
-//   //React Fragment is used to creare the empty tag, <></> if you do not want to create extra element
-//   return (
-//     <>
-//       <h1>{myVariable}</h1>
-//       <div className={styles.box}>
-//         Lorem ipsum dolor sit amet consectetur adipisicing elit. Id, nulla
-//         nostrum. Rem eum praesentium eligendi labore ex, optio, quidem ea ipsa
-//         provident laborum harum dignissimos veritatis, necessitatibus unde
-//         ratione obcaecati!
-//       </div>
-//     </>
-//   );
-// }
-// export default App;
+export default App;
