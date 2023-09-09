@@ -15,7 +15,7 @@ function App() {
     <>
       <Header />
       <Home />
-      <div className={styles.home}> I am content in App</div>
+      <div className={styles.home}> I am new content in App</div>
       <Footer />
     </>
   )
