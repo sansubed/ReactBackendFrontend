@@ -1,6 +1,10 @@
 .header {
-  background-color: gray;
-  color: white;
-  text-align: center;
-  padding: 1rem;
+  height: 4rem;
+  background-color: red;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  color: #08e57a;
+  position: sticky;
 }

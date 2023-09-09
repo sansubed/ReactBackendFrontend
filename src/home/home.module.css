@@ -1,27 +1,8 @@
 .home {
-  background-color: red;
-  line-height: 1;
-  font-size: 32px;
-  width: 200px;
-  height: 100px;
-  padding: 20px;
-  border: 10px solid blue;
-}
-
-.wrapper {
-  height: 400px;
+  min-height: calc(100vh - 8rem);
   background-color: purple;
   display: flex;
   justify-content: center;
+  align-items: center;
+  color: #fff;
 }
-
-/* Flow Layout */
-/* Position Layout */
-/* Flex Layout */
-/* Grid Layout */
-
-/* Color */
-/* name */
-/* hex code */
-/* rgb code */
-/* hsl code */
