@@ -1,10 +1,16 @@
 .home {
+<<<<<<< HEAD
   background-color: gray;
   line-height: 1.15;
+=======
+  background-color: red;
+  line-height: 1;
+>>>>>>> cb1ef8d554aebc498ea860451126b8609ee61ab2
   font-size: 32px;
   width: 200px;
   height: 100px;
   padding: 20px;
+<<<<<<< HEAD
   margin: 3px;
   border: 4px solid red;
   box-sizing: border-box;
@@ -19,3 +25,24 @@
 .wrapper {
   position: relative;
 }
+=======
+  border: 10px solid blue;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  top: 0;
+  right: 0;
+  margin: auto;
+}
+
+/* Flow Layout */
+/* Position Layout */
+/* Flex Layout */
+/* Grid Layout */
+
+/* Color */
+/* name */
+/* hex code */
+/* rgb code */
+/* hsl code */
+>>>>>>> cb1ef8d554aebc498ea860451126b8609ee61ab2
