@@ -1,3 +1,10 @@
+//Create App Component
+
+import Footer from "./footer/footer";
+import Header from "./header/header";
+import Home from "./home/home";
+import styles from "./app.module.css";
+
 // Create App component
 
 import Footer from "./footer/footer";
@@ -14,5 +21,6 @@ function App() {
     </div>
   );
 }
+export default App;
 
 export default App;
