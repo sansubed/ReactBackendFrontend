@@ -1,3 +1,8 @@
 .home {
-  background-color: beige;
+  min-height: calc(100vh - 8rem);
+  background-color: purple;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
 }
