@@ -1,17 +1,23 @@
-// Creat app component 
+// Create App component
 
-import Header from "./head/header"
-import Home from "./home/home"
-import Footer from "./footer/footer"
+import Footer from './footer/footer'
+import Header from './header/header'
+import Home from './home/home'
+import styles from './App.module.css'
 
 function App() {
-  return(
-  <>
- <Header />
- <Home/> 
- <Footer/>
- </>
- 
+  // React Fragment: <></>
+
+  // TODO
+  // Box model for inline element
+  // id for css module
+  return (
+    <>
+      <Header />
+      <Home />
+      <div className={styles.home}> I am content in App</div>
+      <Footer />
+    </>
   )
 }
 
