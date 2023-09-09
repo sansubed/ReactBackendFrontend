@@ -1,6 +1,6 @@
 /* CSS retaled to the App.jsx */
 .box {
-  background: red;
+  background: yellowgreen;
   /* padding : clockwise: top, right, bottom, left*/
   /* padding: 10px all sides  gap between you and the cloth*/
   /* padding: 10px(top-bottom) 10px (left-right) */
@@ -10,7 +10,14 @@
   id for css module
   */
 
-  padding: 10px 50px 20px 40px;
+  /* padding: 10px 50px 20px 40px;
   margin: 10px 0px 0px 40px;
-  border: 10px solid blue;
+  border: 10px solid blue; */
+
+  color: black;
+  line-height: 1;
+  /* font-size: 32px; */
+  width: 100vw;
+  height: 500px;
+  /* padding: px; */
 }
