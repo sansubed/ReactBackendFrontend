@@ -29,9 +29,22 @@ export function displayName() {
   }
 }
 
+const country = 'Nepal'
+// Global Scope
+
 // named export
+// Function scope
 export function displayCountryName() {
-  return 'Nepal'
+  // const newCountry = 'USA'
+  return country
+}
+
+const age = 30
+// Block scope
+if (country === 'Nepal') {
+  console.log(age)
+  console.log(country)
+  // console.log(newCountry)
 }
 
 // export default displayName

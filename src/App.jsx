@@ -5,6 +5,7 @@ import Header from './header/header'
 import Home from './home/home'
 
 function App() {
+  const country = 'Nepal'
   return (
     <div>
       <Header />

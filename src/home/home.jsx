@@ -5,6 +5,7 @@ import { displayName, displayCountryName, myName } from '../basic-js/variable-fu
 // DRY -> Do not repeat yourself
 
 function Home() {
+  // location to write js
   return (
     <div className={styles.home}>
       <div>{displayName()}</div>

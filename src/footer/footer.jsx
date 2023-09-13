@@ -1,6 +1,8 @@
 import styles from './footer.module.css'
 
 function Footer() {
+  const country = 'Nepal'
+
   // console.log(calcAge())
   // function declaration (hoisted)
   // function calcAge() {
