@@ -1,41 +1,23 @@
 import styles from './home.module.css'
+// {} -> object destructuring syntax
+import { displayName, displayCountryName, myName } from '../basic-js/variable-function'
 
-// Variable and Value
-// number (data type)
-const myVariable = 123
-// (immutable)
-
-// string (data type)
-let myCountry = 'Nepal'
-// (mutable)
-myCountry = 'USA'
-myCountry = 'Canada'
-
-const myName = 'Prakash'
-// myName = 'Gorakh' (Error)
-
-// if(condition) {
-//   what to do if condition is matched?
-// }
-
-// function (3 ways)
-// Function declaration
-function displayName() {
-  // conditional statement
-  if (myName === 'Prakash') {
-    return 'Prakash'
-  }
-
-  if (myName === 'Gorakh') {
-    return 'Gorakh'
-  }
-}
+// DRY -> Do not repeat yourself
 
 function Home() {
-  return <div className={styles.home}>{displayName()}</div>
+  return (
+    <div className={styles.home}>
+      <div>{displayName()}</div>
+      <div>{displayCountryName()}</div>
+      <div>{myName}</div>
+    </div>
+  )
 }
 
 // Rendering component -> <Home />
 // Call (run) function -> displayName()
 
 export default Home
+
+// ./ -> if you are trying to import file which is in the same folder
+// .. -> go back from current directory
