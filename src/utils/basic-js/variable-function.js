@@ -4,10 +4,10 @@ export const myVariable = 123
 // (immutable)
 
 // string (data type)
-let myCountry = 'Nepal'
+// let myCountry = 'Nepal'
 // (mutable)
-myCountry = 'USA'
-myCountry = 'Canada'
+// myCountry = 'USA'
+// myCountry = 'Canada'
 
 export const myName = 'Prakash'
 // myName = 'Gorakh' (Error)
