@@ -1,16 +1,12 @@
-// Create App component
-
-import Footer from './footer/footer'
-import Header from './header/header'
-import Home from './home/home'
+// import Contact from './pages/contact/contact'
+import Home from './pages/home/home'
 
 function App() {
   return (
-    <div>
-      <Header />
+    <>
       <Home />
-      <Footer />
-    </div>
+      {/* <Contact /> */}
+    </>
   )
 }
 
