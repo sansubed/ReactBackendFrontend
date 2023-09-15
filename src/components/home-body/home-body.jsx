@@ -1,24 +1,21 @@
 import styles from './home-body.module.css'
-// {} -> object destructuring syntax
-import { displayName, displayCountryName, myName } from '../../utils/basic-js/variable-function'
-
-// DRY -> Do not repeat yourself
 
 function HomeBody() {
-  // location to write js
-  return (
-    <div className={styles.home}>
-      <div>{displayName()}</div>
-      <div>{displayCountryName()}</div>
-      <div>{myName}</div>
-    </div>
-  )
+  // Array
+  const names = ['Anil', 'Samyak', 'Manoj', 'Narayan', 'Madhav', 'Anil']
+
+  console.log(names)
+
+  // numbersMap is callback function
+  function numbersMap(name, index) {
+    return (
+      <div className={styles.item} key={index}>
+        {name}
+      </div>
+    )
+  }
+
+  return <div className={styles.home}>{names.map(numbersMap)}</div>
 }
 
-// Rendering component -> <Home />
-// Call (run) function -> displayName()
-
 export default HomeBody
-
-// ./ -> if you are trying to import file which is in the same folder
-// .. -> go back from current directory

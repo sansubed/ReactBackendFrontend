@@ -20,7 +20,7 @@ function Footer() {
     return age
   }
 
-  console.log(calcAge(2000))
+  // console.log(calcAge(2000))
 
   // arrow function (Not hoisted)
   // const calcAge = () => {
