@@ -1,17 +1,42 @@
-import styles from "./home-body.module.css";
+import styles from './home-body.module.css'
+// Object destructuring
+import React from 'react'
+import { useState } from 'react'
+
+console.log(React)
+
+// Object destructuring
+// const {  name, age } = {
+//   name: 'Alex',
+//   age: 30,
+// }
+
+// Array destructuring
+// const [firstNumber] = [1, 2, 3, 4]
 
 function HomeBody() {
-  const numbers = [1, 2, 3, 4, 5, 6, 7, 8];
+  // Hook -> useState
+  const numbers = [1990, 1995, 2000, 2004, 2007]
+  const [state, setState] = useState(numbers)
+
+  // numbers variable -> React State
 
   return (
     <div className={styles.home}>
-      {numbers.map((number, index) => (
+      {state.map((number, index) => (
         <div className={styles.item} key={index}>
           {number}
+          <button
+            onClick={() => {
+              setState((prevState) => prevState.filter((clickNumber) => number !== clickNumber))
+            }}
+          >
+            X
+          </button>
         </div>
       ))}
     </div>
-  );
+  )
 }
 
-export default HomeBody;
+export default HomeBody
