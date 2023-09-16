@@ -1,34 +1,31 @@
 import styles from './home-body.module.css'
-// Object destructuring
-import React from 'react'
 import { useState } from 'react'
 
-console.log(React)
-
-// Object destructuring
-// const {  name, age } = {
-//   name: 'Alex',
-//   age: 30,
-// }
-
-// Array destructuring
-// const [firstNumber] = [1, 2, 3, 4]
-
 function HomeBody() {
-  // Hook -> useState
-  const numbers = [1990, 1995, 2000, 2004, 2007]
-  const [state, setState] = useState(numbers)
+  const [state, setState] = useState([1990, 1995, 2000, 2004, 2007, 2007])
 
-  // numbers variable -> React State
+  // const state = [1990, 1995, 2000, 2004, 2007, 2007]
+
+  // console.log(setState())
+
+  // [1990, 1995, 2000, 2004, 2007, 2007]
+  // [2000]
+
+  console.log(state)
 
   return (
     <div className={styles.home}>
-      {state.map((number, index) => (
-        <div className={styles.item} key={index}>
-          {number}
+      {/* Optional Chaining Operator */}
+
+      {state?.map((date, i) => (
+        // onClick: event
+        <div className={styles.item} key={i}>
+          {date}
+
           <button
-            onClick={() => {
-              setState((prevState) => prevState.filter((clickNumber) => number !== clickNumber))
+            onClick={function () {
+              console.log('You clicked date:', date, i)
+              setState((prevState) => prevState.filter((clickedDate) => clickedDate !== date))
             }}
           >
             X
