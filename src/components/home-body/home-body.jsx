@@ -1,34 +1,20 @@
 import styles from './home-body.module.css'
-// Object destructuring
-import React from 'react'
+
 import { useState } from 'react'
 
-console.log(React)
-
-// Object destructuring
-// const {  name, age } = {
-//   name: 'Alex',
-//   age: 30,
-// }
-
-// Array destructuring
-// const [firstNumber] = [1, 2, 3, 4]
-
 function HomeBody() {
-  // Hook -> useState
-  const numbers = [1990, 1995, 2000, 2004, 2007]
-  const [state, setState] = useState(numbers)
+  const [numbers, setNumber] = useState([1990, 2000, 2015, 2020])
 
-  // numbeqrs variable -> React State
+  // setNumber((prevState) => prevState.filter((clickNumber) => 1990 !== clickNumber))
 
   return (
     <section className={styles.home}>
-      {state.map((number, index) => (
+      {numbers.map((number, index) => (
         <div className={styles.item} key={index}>
           {number}
           <button
             onClick={() => {
-              setState((prevState) => prevState.filter((clickNumber) => number !== clickNumber))
+              setNumber((prevState) => prevState.filter((clickNumber) => number !== clickNumber))
             }}
           >
             X
@@ -40,3 +26,5 @@ function HomeBody() {
 }
 
 export default HomeBody
+
+// When state updated in React component (setNumber), that react component will re-render
