@@ -1,4 +1,4 @@
-import styles from "./header.module.css";
+import styles from './header.module.css'
 
 function Header() {
   // location to write js
@@ -8,7 +8,7 @@ function Header() {
       <div>Service</div>
       <div>Contact</div>
     </div>
-  );
+  )
 }
 
-export default Header;
+export default Header

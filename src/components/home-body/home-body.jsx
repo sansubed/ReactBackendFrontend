@@ -22,7 +22,7 @@ function HomeBody() {
   // numbeqrs variable -> React State
 
   return (
-    <div className={styles.home}>
+    <section className={styles.home}>
       {state.map((number, index) => (
         <div className={styles.item} key={index}>
           {number}
@@ -35,7 +35,7 @@ function HomeBody() {
           </button>
         </div>
       ))}
-    </div>
+    </section>
   )
 }
 
