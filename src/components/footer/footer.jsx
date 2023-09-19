@@ -6,7 +6,6 @@ function Footer() {
   // console.log(calcAge())
   // function declaration (hoisted)
   // function calcAge() {
-  //   return 30
   // }
 
   // function expression (Not hoisted)
