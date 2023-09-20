@@ -5,6 +5,8 @@ import { useState } from 'react'
 function HomeBody() {
   const [numbers, setNumber] = useState([1990, 2000, 2015, 2020])
 
+  console.log('Running Home Body')
+
   // setNumber((prevState) => prevState.filter((clickNumber) => 1990 !== clickNumber))
 
   return (
