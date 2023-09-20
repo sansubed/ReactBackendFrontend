@@ -1,30 +1,29 @@
 import { useState } from 'react'
-import styles from './home.module.css'
-
-// 🌙
+import './home.css'
 
 function Home() {
-  const [mode, setMode] = useState(true)
-
-  // let mode = true
-
-  console.log('Rendering Home')
-
-  // falsy values
-  // undefined, null, NaN, '', 0, false
-
-  // ternary operator
-  // mode ? styles.light : styles.dark
-  // condition ? value_for_true_condition : value_for_false_condition
-
+  const [isOpen, setIsOpen] = useState(false)
   return (
-    <>
-      <div className={mode ? styles.light : styles.dark}>
-        <button onClick={() => setMode(!mode)} className={styles.modeIcon}>
-          {mode ? '🌞' : '🌙'}
-        </button>
+    <div className="wrapper">
+      <button onClick={() => setIsOpen(true)}>Delete iPhone!</button>
+      {/* Short circuiting (||, &&): JavaScript */}
+      {isOpen && (
+        <>
+          <div className="overlay" />
+          <div className="modal">
+            <div>
+              <div>Are you sure?</div>
+            </div>
+            <button onClick={() => setIsOpen(false)} className="close">
+              x
+            </button>
+          </div>
+        </>
+      )}
+      <div className="notModal">
+        <img src="https://images.hindustantimes.com/tech/img/2023/08/12/960x540/iPhone_1691841077285_1691841077505.jpg" alt="" />
       </div>
-    </>
+    </div>
   )
 }
 
