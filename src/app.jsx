@@ -1,63 +1,17 @@
 import { useState } from 'react'
-import { createPortal } from 'react-dom'
-
-import './app.css'
+import CountryDetail from './components/country-detail'
 
 function App() {
-  const [open, setOpen] = useState(false)
-
-  // falsy values
-  // false, 0, undefined, null, '', NaN
-
-  // Short circuiting (|| -> Logical OR, && -> Logical AND)
-  // falsy || truthy -> truthy
-
-  console.log('Running')
+  const [country, setCountry] = useState('Nepal')
+  const [loading, setLoading] = useState(false)
 
   return (
-    <div className="wrapper">
-      <div>
-        <button className="btn" onClick={() => setOpen(true)}>
-          Open Detail!
-        </button>
-        <div className="card">
-          <h1>iPhone 15</h1>
-          <img className="iPhoneImg" src="https://images.macrumors.com/article-new/2023/09/iPhone-15-General-Feature-Black.jpg" alt="iPhone 15" />
-        </div>
-
-        {open &&
-          createPortal(
-            <>
-              <div className="overlay"></div>
-
-              <div className="modal">
-                <div>This is the detail of iPhone</div>
-                <button onClick={() => setOpen(false)} className="close">
-                  X
-                </button>
-                <button>Delete</button>
-                <button onClick={() => setOpen(false)}>Close</button>
-              </div>
-            </>,
-            document.getElementById('modal')
-          )}
-
-        <div className="content">I am not part of modal</div>
-      </div>
+    <div>
+      value from country: {country}
+      <br />
+      value from country detail: <CountryDetail myCountry={country} isLoading={loading} />
     </div>
   )
 }
 
 export default App
-
-// ReactDOM.createPortal()
-
-// 0 || 1 -> 1
-// 1 || 0 -> 1
-// 1 || 1 -> 1
-// 0 || 0 -> 0
-
-// 0 && 1 -> 0
-// 1 && 0 -> 0
-// 1 && 1 -> 1
-// 0 && 0 -> 0
