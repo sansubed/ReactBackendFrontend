@@ -26,7 +26,7 @@
 }
 
 .modal {
-  background-color: white;
+  background-color: purple;
   padding: 10px;
   height: 200px;
   width: 400px;
@@ -49,5 +49,12 @@
   right: 0;
   left: 0;
   bottom: 0;
-  background-color: black;
+  background-color: gray;
+}
+
+.content {
+  background-color: red;
+
+  height: 200px;
+  position: relative;
 }
