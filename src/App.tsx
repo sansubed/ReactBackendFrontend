@@ -1,47 +1,50 @@
-// functional component
+// useEffect Hook
+
+import { useEffect } from 'react'
+
 function App() {
-  // data types in JS
-  // string, number, boolean, object, function, undefined
+  useEffect(() => {
+    console.log('Running from useEffect callback function')
+  }, [])
 
-  // Type inference
-  let name = 'Alex'
-  name = 'Prakash'
-  // name = [10,20]
-  // name = {name: 'Alex'}
-  // name = 100
-
-  // Type annotation
-  // let country: string
-  // country = 'Nepal'
-  // country = 'USA'
-  // country = 100
-  // country = ['Nepal', 'USA']
-
-  // function print() {
-  //   return [10, 20]
-  // }
-
-  let age: number | string = 30
-  age = 'Thirty'
-  age = 40
-  age = 'Fifty'
-  age = 50
-  // age = null -> invalid type
-  // age = [10, 20] -> invalid type
-  // age = print() -> invalid type
-
-  type ValidCountries = 'Nepal' | 'India' | 'USA'
-
-  let country: ValidCountries = 'USA'
-  country = 'India'
-  // country = 'abcd'
-  return (
-    <div>
-      {name}
-      {country}
-      {age}
-    </div>
-  )
+  // const [state, setState] = useState('Nepal')
+  return <div>App</div>
 }
 
 export default App
+
+// No input, Output
+// function add() {
+//   const a = 10
+//   const b = 20
+//   return a + b
+// }
+
+// const result = add()
+
+// input, Output
+// function add(a: number, b: number) {
+//   return a + b
+// }
+
+// const result = add(10, 20.25)
+
+// let age
+// console.log(age)
+
+// No input, No output
+// function add() {
+//   const a = 10
+//   const b = 20
+//   console.log(a, b)
+// }
+
+// const result = add()
+// console.log(result)
+
+// Input, No output
+// function add(a: number, b: number) {
+//   console.log(a, b)
+// }
+
+// const result = add(20, 30)
