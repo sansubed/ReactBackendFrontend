@@ -1,26 +1,45 @@
-import { useState } from 'react'
-import Detail from './components/detail'
-
+// functional component
 function App() {
-  const [isLoading, setIsLoading] = useState(false)
-  const [country, setCountry] = useState('Nepal')
-  console.log('Rendering App component')
-  console.log('Value of isLoading', isLoading)
+  // data types in JS
+  // string, number, boolean, object, function, undefined
 
-  function updateState() {
-    console.log('Running')
-    setIsLoading(true)
-  }
+  // Type inference
+  let name = 'Alex'
+  name = 'Prakash'
+  // name = [10,20]
+  // name = {name: 'Alex'}
+  // name = 100
 
-  function updateCountry(newCountry) {
-    setCountry(newCountry)
-  }
+  // Type annotation
+  // let country: string
+  // country = 'Nepal'
+  // country = 'USA'
+  // country = 100
+  // country = ['Nepal', 'USA']
 
+  // function print() {
+  //   return [10, 20]
+  // }
+
+  let age: number | string = 30
+  age = 'Thirty'
+  age = 40
+  age = 'Fifty'
+  age = 50
+  // age = null -> invalid type
+  // age = [10, 20] -> invalid type
+  // age = print() -> invalid type
+
+  type ValidCountries = 'Nepal' | 'India' | 'USA'
+
+  let country: ValidCountries = 'USA'
+  country = 'India'
+  // country = 'abcd'
   return (
     <div>
-      {console.log('JSX of App component is Running')}
-      <Detail loading={isLoading} update={updateState} updateCountry={updateCountry} />
-      Value of country in App component: {country}
+      {name}
+      {country}
+      {age}
     </div>
   )
 }
