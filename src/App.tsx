@@ -1,42 +1,30 @@
-// useEffect Hook
 import { useEffect, useState } from 'react'
 
 function App() {
-  // Synchronous Code
-  const [count, setCount] = useState(0)
+  const [isLoading, setIsLoading] = useState(true)
 
-  console.log('1. App component rendering started!')
+  const [catData, setCatData] = useState([])
 
-  console.log(count)
+  console.log(window)
 
-  const callbackFn = () => {
-    console.log('2. Running from useEffect callback function')
-  }
+  useEffect(() => {
+    // Fetch data from database
+    // https://api.thecatapi.com/v1/images/search
+    // const cat = 'https://api.thecatapi.com/v1/images/search'
 
-  // Asynchronous Code
-  // setInterval(() => {
-  //   setCount((prevState) => prevState + 1)
-  // }, 3000)
+    // (response) => response.json() -> asynchronous code
+    // (data) => data -> asynchronous code
 
-  // useEffect hook will run at the end of component rendering or re-rendering process
-  useEffect(callbackFn)
+    const promiseOne = fetch('https://api.thecatapi.com/v1/images/search')
+    const promiseTwo = promiseOne.then((response) => response.json())
+    promiseTwo.then((data) => {
+      setCatData(data)
+      setIsLoading(false)
+    })
+  }, [])
 
-  console.log('3. Running below useEffect hook call')
-
-  return (
-    <div>
-      {console.log('4. Running inside JSX')}
-      App
-      <h1>Count: {count}</h1>
-      <button
-        onClick={() => {
-          setCount((prevState) => prevState + 1)
-        }}
-      >
-        Update Number
-      </button>
-    </div>
-  )
+  // [] -> useEffect hook can only run once at the end
+  return isLoading ? <div>Getting cat data...</div> : catData.map((cat) => <img key={cat.id} src={cat.url} />)
 }
 
 export default App
