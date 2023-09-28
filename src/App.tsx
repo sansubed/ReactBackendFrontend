@@ -1,50 +1,42 @@
 // useEffect Hook
-
-import { useEffect } from 'react'
+import { useEffect, useState } from 'react'
 
 function App() {
-  useEffect(() => {
-    console.log('Running from useEffect callback function')
-  }, [])
+  // Synchronous Code
+  const [count, setCount] = useState(0)
 
-  // const [state, setState] = useState('Nepal')
-  return <div>App</div>
+  console.log('1. App component rendering started!')
+
+  console.log(count)
+
+  const callbackFn = () => {
+    console.log('2. Running from useEffect callback function')
+  }
+
+  // Asynchronous Code
+  // setInterval(() => {
+  //   setCount((prevState) => prevState + 1)
+  // }, 3000)
+
+  // useEffect hook will run at the end of component rendering or re-rendering process
+  useEffect(callbackFn)
+
+  console.log('3. Running below useEffect hook call')
+
+  return (
+    <div>
+      {console.log('4. Running inside JSX')}
+      App
+      <h1>Count: {count}</h1>
+      <button
+        onClick={() => {
+          setCount((prevState) => prevState + 1)
+        }}
+      >
+        Update Number
+      </button>
+    </div>
+  )
 }
 
 export default App
-
-// No input, Output
-// function add() {
-//   const a = 10
-//   const b = 20
-//   return a + b
-// }
-
-// const result = add()
-
-// input, Output
-// function add(a: number, b: number) {
-//   return a + b
-// }
-
-// const result = add(10, 20.25)
-
-// let age
-// console.log(age)
-
-// No input, No output
-// function add() {
-//   const a = 10
-//   const b = 20
-//   console.log(a, b)
-// }
-
-// const result = add()
-// console.log(result)
-
-// Input, No output
-// function add(a: number, b: number) {
-//   console.log(a, b)
-// }
-
-// const result = add(20, 30)
