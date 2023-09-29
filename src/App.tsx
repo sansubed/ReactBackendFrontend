@@ -1,30 +1,48 @@
-import { useEffect, useState } from 'react'
+// api url -> https://restcountries.com/v3.1/all
+
+const apiUrl = 'https://restcountries.com/v3.1/all'
+const result = window.fetch(apiUrl)
+
+// Promise
+// Promise is object which holds the result of Asynchronous operation
+
+// How to handle Promise
+// 1. then method
+// 2. async await
+
+// console.log(result.then())
+console.log('Before handling promise')
+const output = result
+  .then((res) => {
+    console.log('Inside first then')
+    return res.json()
+  })
+  .then((data) => console.log('Inside second then'))
+  .catch((error) => console.log('You got error!', error))
+
+console.log(output)
+// Blocking code: Weather call stack blocked or not
+// for (let i = 0; i < 100000; i++) {
+//   console.log('Running in Loop')
+// }
+
+console.log('After handling promise')
 
 function App() {
-  const [isLoading, setIsLoading] = useState(true)
-
-  const [catData, setCatData] = useState([])
-
-  console.log(window)
-
-  useEffect(() => {
-    // Fetch data from database
-    // https://api.thecatapi.com/v1/images/search
-    // const cat = 'https://api.thecatapi.com/v1/images/search'
-
-    // (response) => response.json() -> asynchronous code
-    // (data) => data -> asynchronous code
-
-    const promiseOne = fetch('https://api.thecatapi.com/v1/images/search')
-    const promiseTwo = promiseOne.then((response) => response.json())
-    promiseTwo.then((data) => {
-      setCatData(data)
-      setIsLoading(false)
-    })
-  }, [])
-
-  // [] -> useEffect hook can only run once at the end
-  return isLoading ? <div>Getting cat data...</div> : catData.map((cat) => <img key={cat.id} src={cat.url} />)
+  return <div>App</div>
 }
 
 export default App
+
+// const obj = {
+//   anything: () => {
+//     console.log('I am anything function')
+//   },
+//   name: 'Santona'
+// }
+
+// obj.anything()
+
+// const numbers = [1, 2, 3, 4]
+
+// console.log(numbers.map((number) => ))
