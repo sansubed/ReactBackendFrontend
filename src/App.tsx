@@ -1,12 +1,9 @@
 import { useEffect, useState } from 'react'
-
-const apiUrl = 'https://restcountries.com/v3.1/all'
+import { getCountries } from './api'
 
 function App() {
   const [countries, setCountries] = useState([])
   const [error, setError] = useState()
-
-  console.log(error)
 
   useEffect(() => {
     // fetch(apiUrl)
@@ -15,24 +12,13 @@ function App() {
     //   .catch((error) => console.log('You got error!', error))
     console.log('before function')
     // Immediately Invoked Function Expression (IIFE)
-    async function getCountries() {
-      // 18 -> synchronous code
-      console.log('Running async function')
-      try {
-        const res = await fetch(apiUrl)
-        // 22 -> asynchronous code
-        console.log('Got json response!')
-        const data = await res.json()
 
-        setCountries(data)
-      } catch (e) {
-        setError(e)
-      }
-    }
+    // async function fetchCountry() {
+    //   setCountries(await getCountries())
+    // }
+    getCountries().then((res) => setCountries(res))
 
-    getCountries()
-
-    console.log('after function')
+    // fetchCountry()
   }, [])
 
   return error ? (
